@@ -69,6 +69,10 @@ DomesticCustomCreditUI_left <- function() {
 #' DomesticCustomCreditUI_bottom()
 DomesticCustomCreditUI_right <- function() {
   res <- tagList(
+    shiny::actionButton(inputId = 'btn_DomesticCustomCredit_MATUREDDEBIT_view',label = '查询到期债权表数据'),
+    tsui::mdl_download_button(id = 'dl_DomesticCustomCredit_MATUREDDEBIT',label = '下载到EXCEL'),
+    shiny::actionButton(inputId = 'btn_DomesticCustomCredit_Receiv_view',label = '查询收款数据'),
+    tsui::mdl_download_button(id = 'dl_DomesticCustomCredit_Receiv',label = '下载到EXCEL')
 
 
 
