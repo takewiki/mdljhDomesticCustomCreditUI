@@ -51,7 +51,8 @@ DomesticCustomCreditUI_left <- function() {
     # shiny::actionButton(inputId = 'btn_DomesticCustomCredit_Receiv_view',label = '获取收款数据')
     tsui::mdl_date(id ='text_date_DomesticCustomCredit_FDate','输入日期'),
     shiny::actionButton(inputId = 'btn_DomesticCustomCredit_Measure',label = '额度测算'),
-    tsui::mdl_download_button(id = 'dl_DomesticCustomCredit',label = '下载到EXCEL')
+    tsui::mdl_download_button(id = 'dl_DomesticCustomCredit',label = '下载到EXCEL'),
+    shiny::actionButton(inputId = 'btn_DomesticCustomCredit_Measure_updateERP',label = '将计算结果更新到ERP信用额度'),
 
 
   )
